@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #d35400;
+  color: whitesmoke;
+}
+
+.input {
+  width: 400px;
+  height: 20px;
+  border-radius: 5px;
+  background: #d35400;
+  border: none;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+.button {
+  background: #c0392b;
+  border: none;
+  color: white;
+  height: 25px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.button-remove {
+  background: #c0392b;
+  border: none;
+  color: white;
+  height: 25px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  width: 40px;
+}
+
+.container {
+  background: #f1c40f;
+  border-radius: 20px;
+  margin: 0px 200px 0 200px;
+  padding: 3px;
+}
+
+.afazeres {
+  padding: 0 0 20px 0;
+}
+
+
