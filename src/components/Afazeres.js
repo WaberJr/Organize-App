@@ -45,11 +45,11 @@ const Afazeres = () => {
   const RenderizarAfazeres = () => {
     return (
       itens.map((item, index) => (
-        <div className='afazeres' key={index}>
-            {index + 1} - {item}
-            <button className='button' onClick={() => adicionarFeitos(index)}>Já feito</button>
-            <button className='button-remove' onClick={() => removerItem(index)}><span aria-hidden="true">&times;</span></button>
-        </div>  
+        <div key={index}>
+          {index + 1} - {item}
+          <button className='afazeres' className='button' onClick={() => adicionarFeitos(index)}>Já feito</button>
+          <button className='button-remove' onClick={() => removerItem(index)}><span aria-hidden="true">&times;</span></button>
+        </div> 
       ))
     )
   }
@@ -80,7 +80,7 @@ const Afazeres = () => {
       </form>
 
       {concluidos.length === 0 ? <h3>Você ainda não tem nenhuma tarefa feita...</h3> : <h3>Tarefas concluídas</h3>} 
-      <RenderizarFeitos className='afazeres'/>
+      <RenderizarFeitos/>
     </div>
   )
 }
